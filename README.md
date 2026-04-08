@@ -8,12 +8,13 @@ A computer vision pipeline that detects all persons in a sports video and assign
 
 ## Demo
 
-> 📹 **Source video:** _[Add your public video URL here]_  
-> 🎬 **Output video:** _[Add your output/demo link here — e.g. Google Drive, YouTube unlisted]_
+> 📹 **Source video:** https://drive.google.com/file/d/1TnFQqNFuMqfNh9sqnrwD_YLjoa7eu761/view?usp=sharing
+>
+> 🎬 **Output video:** https://drive.google.com/file/d/1TnFQqNFuMqfNh9sqnrwD_YLjoa7eu761/view?usp=sharing
 
 Sample annotated frame:
 
-![Sample frame](assets/sample_frame.png)
+![Sample frame](outputs/sample_frame.png)
 
 ---
 
