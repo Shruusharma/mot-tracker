@@ -132,7 +132,7 @@ class MOTPipeline:
         dict with keys: total_frames, unique_ids, elapsed_s, avg_fps
         """
         cap    = cv2.VideoCapture(str(self.video_path))
-        fourcc = cv2.VideoWriter_fourcc(*"mp4v")
+        fourcc = cv2.VideoWriter_fourcc(*"avc1")   # H.264 encoding
         writer = cv2.VideoWriter(str(self.output_path), fourcc, self.fps, (self.width, self.height))
 
         if not writer.isOpened():

@@ -53,6 +53,29 @@ def main() -> None:
     for key, val in stats.items():
         print(f"  {key:<18}: {val}")
 
+def run_tracker(input_video_path):
+    from src.tracker import MOTPipeline
+    import os
+
+    output_path = os.path.join("outputs", "output.mp4")
+    os.makedirs("outputs", exist_ok=True)
+
+    pipeline = MOTPipeline(
+        video_path=input_video_path,
+        output_path=output_path,
+        device="cpu"   
+    )
+
+    pipeline.run(verbose=False)
+
+    return output_path
+
 
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--video", type=str, required=True)
+    args = parser.parse_args()
+
+    run_tracker(args.video)
