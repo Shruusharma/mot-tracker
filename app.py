@@ -1,20 +1,4 @@
-"""
-app.py — Streamlit UI for the MOT pipeline.
 
-Deploy to Streamlit Cloud:
-  1. Push this repo to GitHub
-  2. Go to share.streamlit.io → New app → select this repo
-  3. Set Main file path: app.py
-  4. Deploy
-
-Key design decisions for Streamlit Cloud compatibility
--------------------------------------------------------
-* All file I/O happens in /tmp/ (the repo mount is read-only).
-* NamedTemporaryFile(delete=False) is used for the uploaded video so the
-  path remains valid during the long pipeline.run() call.
-* st.video() receives the /tmp/ output path as bytes — no disk-to-browser
-  transfer issues.
-"""
 
 import os
 import tempfile
