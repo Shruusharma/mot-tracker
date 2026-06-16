@@ -46,7 +46,7 @@ Annotated Output Video
 **Requirements:** Python 3.10+
 
 ```bash
-git clone https://github.com/<your-username>/mot-tracker.git
+git clone https://github.com/Shruusharma/mot-tracker.git
 cd mot-tracker
 pip install -r requirements.txt
 ```
